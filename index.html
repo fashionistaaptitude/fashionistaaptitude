@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon"href="img/favicon.ico">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fashionista aptitude ✧ virtual closet</title>
+<meta name="description" content="Step into fashionista aptitude's virtual closet — a dreamy Y2K fashion boutique. Browse vintage & Y2K finds and shop the full collection on Depop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Pacifico&family=VT323&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- cursor sparkle trail target -->
+<div id="sparkle-layer" aria-hidden="true"></div>
+
+<div class="room-wrap">
+  <main class="room" id="room">
+
+    <!-- ===== WALLPAPER / BACK LAYER ===== -->
+    <div class="wall" aria-hidden="true">
+      <div class="wall-panel wall-panel--1"></div>
+      <div class="wall-panel wall-panel--2"></div>
+      <div class="wall-panel wall-panel--3"></div>
+      <div class="baseboard"></div>
+    </div>
+
+    <!-- windows with curtains -->
+    <div class="window win-1" aria-hidden="true">
+      <div class="curtain curtain-left"></div>
+      <div class="curtain curtain-right"></div>
+      <div class="pane"><div class="pane-cross-v"></div><div class="pane-cross-h"></div></div>
+      <div class="valance"></div>
+    </div>
+    <div class="window win-2" aria-hidden="true">
+      <div class="curtain curtain-left"></div>
+      <div class="curtain curtain-right"></div>
+      <div class="pane"><div class="pane-cross-v"></div><div class="pane-cross-h"></div></div>
+      <div class="valance"></div>
+    </div>
+
+    <!-- columns -->
+    <div class="column col-1" aria-hidden="true"></div>
+    <div class="column col-2" aria-hidden="true"></div>
+    <div class="column col-3" aria-hidden="true"></div>
+
+    <!-- wall sconces -->
+    <div class="sconce sconce-1" aria-hidden="true"><span></span></div>
+    <div class="sconce sconce-2" aria-hidden="true"><span></span></div>
+    <div class="sconce sconce-3" aria-hidden="true"><span></span></div>
+
+    <!-- framed portrait -->
+    <div class="frame-deco" aria-hidden="true">
+      <div class="frame-inner">✿</div>
+    </div>
+
+    <!-- flower vase -->
+    <div class="vase-deco" id="vase" aria-hidden="true">
+      <div class="bloom bloom-1">❀</div>
+      <div class="bloom bloom-2">❀</div>
+      <div class="bloom bloom-3">✿</div>
+      <div class="vase-body"></div>
+    </div>
+
+    <!-- piano -->
+    <div class="piano-deco" aria-hidden="true">
+      <div class="piano-lid"></div>
+      <div class="piano-music">♪ ♫</div>
+      <div class="piano-body">
+        <div class="piano-keys"></div>
+      </div>
+      <div class="piano-legs"><span></span><span></span><span></span></div>
+    </div>
+
+    <!-- reflective floor -->
+    <div class="floor" aria-hidden="true"></div>
+
+    <!-- sparkles floating -->
+    <div class="ambient-sparkle s1">✦</div>
+    <div class="ambient-sparkle s2">✧</div>
+    <div class="ambient-sparkle s3">✦</div>
+    <div class="ambient-sparkle s4">✧</div>
+
+    <!-- ===== TOP TOOLBAR ===== -->
+    <nav class="toolbar toolbar-top" aria-label="Main navigation">
+      <div class="folder-tab">
+        <span>fashionista aptitude</span>
+      </div>
+      <ul class="nav-icons">
+        <li><button class="nav-btn" data-panel="home" aria-label="Home"><i class="ico ico-home"></i><em>home</em></button></li>
+        <li><button class="nav-btn" data-panel="closet" aria-label="Closet"><i class="ico ico-closet"></i><em>closet</em></button></li>
+        <li><button class="nav-btn" data-panel="about" aria-label="About"><i class="ico ico-about"></i><em>about</em></button></li>
+        <li><button class="nav-btn" data-panel="journal" aria-label="Journal"><i class="ico ico-journal"></i><em>journal</em></button></li>
+        <li><button class="nav-btn" data-panel="contact" aria-label="Contact"><i class="ico ico-contact"></i><em>contact</em></button></li>
+      </ul>
+      <div class="avatar-badge">
+        <div class="avatar-head"></div>
+      </div>
+    </nav>
+
+    <!-- ===== CLOSET DISPLAY (right side, always slightly visible) ===== -->
+    <section class="wardrobe" id="wardrobe-teaser" aria-hidden="true">
+      <div class="wardrobe-sign">✧ the closet ✧</div>
+      <div class="wardrobe-doors">
+        <div class="wardrobe-door door-l"></div>
+        <div class="wardrobe-door door-r"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTENT STAGE (panels overlay the room) ===== -->
+    <div class="stage-backdrop" id="stage-backdrop"></div>
+
+    <section class="panel panel--home" id="panel-home" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll">
+        <div class="home-badge">✧ welcome to ✧</div>
+        <h1 class="home-title">fashionista<br><span>aptitude</span></h1>
+        <p class="home-sub">a tiny virtual closet full of pre-loved Y2K &amp; vintage finds</p>
+        <div class="home-figure" aria-hidden="true">
+          <div class="fig-head"></div>
+          <div class="fig-body"></div>
+        </div>
+        <button class="cta-btn" data-panel="closet">step into the closet ➜</button>
+        <p class="home-hint">click a tab above to look around ✎</p>
+      </div>
+    </section>
+
+    <section class="panel panel--closet" id="panel-closet" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll">
+        <h2 class="panel-title">✧ the closet ✧</h2>
+        <p class="panel-lede">everything here lives on Depop — click a piece to see it up close, then tap <b>view on depop</b> to buy!</p>
+        <div class="closet-toolbar">
+          <input type="text" id="closet-search" class="closet-search" placeholder="search the rack... (e.g. skirt, denim)">
+          <div class="closet-filters" id="closet-filters"></div>
+        </div>
+        <div class="closet-grid" id="closet-grid"></div>
+        <a class="depop-shop-link" href="https://www.depop.com/fashionistaaptitude/" target="_blank" rel="noopener">✦ see everything on my Depop shop ✦</a>
+      </div>
+    </section>
+
+    <section class="panel panel--about" id="panel-about" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll diary">
+        <div class="diary-spiral" aria-hidden="true"></div>
+        <h2 class="panel-title">✧ about me ✧</h2>
+        <div class="about-photo">
+          <div class="about-photo-inner">📸</div>
+          <span class="washi-tape tape-1"></span>
+          <span class="washi-tape tape-2"></span>
+        </div>
+        <p class="about-text">hiii, welcome to my closet! i'm the girl behind <b>fashionista aptitude</b> — i've been thrifting and re-selling Y2K &amp; pieces since forever because i believe good clothes deserve a second (or third) life.</p>
+        <p class="about-text"> i live for low-rise skirts, butterfly clips, just any cute clothes that feels like it walked straight out of a 2003 mall<3.</p>
+        <p class="about-text"> I am currently learning coding,I love to journal & I am slowly learning more how to elevate digital expeirences.  This page is a work in progress. Figuring out what's coming to the shop next ♡</p>
+        <div class="about-links">
+          <a href="https://www.depop.com/fashionistaaptitude/" target="_blank" rel="noopener" class="pill-link">🛍 depop</a>
+          <a href="https://www.instagram.com/cosmicaptitude/" target="_blank" rel="noopener" class="pill-link">✎ instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--journal" id="panel-journal" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll">
+        <h2 class="panel-title">✧ the journal ✧</h2>
+        <p class="panel-lede">little notes from the closet — styling ideas, new finds, and behind-the-seams stuff.</p>
+        <div class="journal-grid" id="journal-grid"></div>
+      </div>
+    </section>
+
+    <section class="panel panel--article" id="panel-article" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll">
+        <button class="back-link" id="article-back">← back to journal</button>
+        <div id="article-body"></div>
+      </div>
+    </section>
+
+    <section class="panel panel--contact" id="panel-contact" data-panel-content>
+      <button class="panel-close" data-close aria-label="Close">✕</button>
+      <div class="panel-scroll">
+        <h2 class="panel-title">✧ say hi ✧</h2>
+        <p class="panel-lede">questions about a piece, bundle deals, or just wanna chat about Y2K fashion? find me here:</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://www.depop.com/fashionistaaptitude/" target="_blank" rel="noopener">
+            <span class="contact-ico">🛍</span><span>Depop<br><b>@fashionistaaptitude</b></span>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/cosmicaptitude/target="_blank" rel="noopener">
+            <span class="contact-ico">✎</span><span>Instagram<br><b>@cosmicaptitude</b></span>
+          </a>
+          <a class="contact-card" href="mailto:lushkehzyah@gmail.com">
+            <span class="contact-ico">✉</span><span>Email<br><b>lushkehzyah@gmail.com</b></span>
+          </a>
+        </div>
+        <form class="newsletter" id="newsletter-form">
+          <label for="newsletter-email">✧ get an email when new drops land ✧</label>
+          <div class="newsletter-row">
+            <input type="email" id="newsletter-email" placeholder="your@email.com" required>
+            <button type="submit">sign up</button>
+          </div>
+          <p class="newsletter-note" id="newsletter-note"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== BOTTOM TOOLBAR ===== -->
+  <nav class="toolbar toolbar-bottom" aria-label="Quick tools">
+    <button class="tool-btn" id="tool-search" title="search the closet"><i class="ico ico-search"></i></button>
+    <button class="tool-btn" id="tool-add" title="favorite something"><i class="ico ico-add"></i></button>
+    <button class="tool-btn" id="tool-book" title="open the journal"><i class="ico ico-book"></i></button>
+    <button class="tool-btn" id="tool-play" title="play a little tune"><i class="ico ico-play"></i></button>
+    <button class="tool-btn" id="tool-oops" title="???"><i class="ico ico-oops"></i></button>
+    <button class="tool-btn" id="tool-plant" title="water the flowers"><i class="ico ico-plant"></i></button>
+    <button class="tool-btn" id="tool-settings" title="change the mood"><i class="ico ico-settings"></i></button>
+  </nav>
+</div>
+
+<!-- product modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-card" id="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div class="modal-img" id="modal-img"></div>
+    <div class="modal-info">
+      <h3 id="modal-name"></h3>
+      <p class="modal-price" id="modal-price"></p>
+      <p class="modal-meta" id="modal-meta"></p>
+      <p class="modal-desc" id="modal-desc"></p>
+      <a class="cta-btn modal-cta" id="modal-cta" target="_blank" rel="noopener">view on depop ➜</a>
+    </div>
+  </div>
+</div>
+
+<!-- toast -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
